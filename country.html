@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+    <button onclick="history.back()" class="btn btn-sm btn-outline-info" type="button"> &lArr; back</button>
+    <div class="container ">
+        <div class="row justify-content-center mt-3 w-100">
+            <div class="col-md-10 offset-md-1">
+                <div class="card mb-3 shadow-sm card-country">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 mt-3">
+                            <img src="https://via.placeholder.com/300x200" alt="Country Flag" id="flagImg"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 id="countryName"></h2>
+                                <ul class="list-group list-group-flush mt-3">
+                                    <li class="list-group-item">
+                                        <strong>Official Name :</strong>
+                                        <span id="officialName"></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Capital :</strong>
+                                        <span id="capital"></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Region :</strong>
+                                        <span id="region"></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Sub Region :</strong>
+                                        <span id="subRegion"></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Population :</strong>
+                                        <span id="population"></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Area :</strong>
+                                        <span id="area"></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Languages :</strong>
+                                        <span id="languages"></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Currencies :</strong>
+                                        <span id="currencies"></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Maps :</strong>
+                                        <span><a target="blank" id="maps"></a></span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Borders :</strong>
+                                        <span id="borders"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="spinner d-none" id="spinner">
+        <div class="spinner-border text-primary" role="status">
+        </div>
+        <p> loading....</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/country.js"></script>
+</body>
+
+</html>
